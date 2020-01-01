@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light|Special+Elite&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Shadows Into Light", cursive;
+  background-color: whitesmoke;
+  position: relative;
+  background-image: url("green_dust_scratch.png");
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  font-family: "Special Elite", cursive;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 100px;
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-bewteen;
+  align-items: center;
+  background-color: white;
+}
+
+@media (max-width: 750px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+/*  START OF NAV */
+
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 750px) {
+  .nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60vw;
+}
+
+@media (max-width: 750px) {
+  .nav ul {
+    flex-direction: column;
+  }
+}
+
+.nav li {
+  padding: 0px 8px;
+  font-size: 1.5rem;
+}
+
+.nav li a {
+  color: black;
+}
+
+.nav li a:hover {
+  cursor: pointer;
+  color: teal;
+}
+/*  END OF NAV */
+
+/*  START OF HOME */
+
+.home-section {
+  display: flex;
+  font-size: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0px auto 50px auto;
+  padding-top: 150px;
+}
+
+.home-section > p {
+  padding: 15px;
+}
+
+#profile-pic {
+  display: block;
+  width: 40%;
+  max-width: 550px;
+  height: auto;
+  margin: 0px auto 20px;
+  border-radius: 100px;
+}
+
+@media (max-width: 750px) {
+  .home-section {
+    padding-top: 250px;
+  }
+}
+
+/* END OF HOME */
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: auto;
+  margin: 10px;
+  width: 100%;
+}
+
+.flex-item {
+  font-size: 1.8rem;
+  min-width: 250px;
+  max-width: 350px;
+  padding: 30px 20px 60px 20px;
+  border: 2px solid black;
+  margin: 20px;
+  height: auto;
+  text-align: center;
+  background-color: white;
+}
+
+.flex-item > p {
+  padding: 10px;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 850px) {
+  .flex-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-item {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+#backgroundtitle {
+  padding: 150px 20px 20px 20px;
+}
+
+#backgroundtitle > p {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+#interesttitle {
+  padding: 150px 20px 20px 20px;
+}
+
+@media (max-width: 750px) {
+  #backgroundtitle,
+  #interesttitle {
+    padding-top: 250px;
+  }
+}
+
+#cooking-pic,
+#dog-pic,
+#reading-pic {
+  width: 100%;
+  height: 45%;
+  margin-bottom: 20px;
+}
+
+#contacttitle {
+  padding: 150px 20px 20px 20px;
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+}
+
+.contact-details {
+  font-size: 2rem;
+  color: black;
+  text-shadow: 1px 1px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+  padding: 80px 20px 100px 20px;
+}
+
+.contact-details:hover {
+  color: teal;
+  transform: translateY(8px);
+}
+
+@media (max-width: 750px) {
+  .contact-details {
+    padding: 50px 20px 50px 20px;
+    margin-top: 10px;
+  }
+}
+
+footer {
+  position: absolute;
+  min-height: 80px;
+  width: 100%;
+  text-align: end;
+  padding-top: 20px;
+  padding-right: 20px;
+  background-color: white;
+}
